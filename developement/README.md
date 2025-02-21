@@ -109,5 +109,31 @@ Modifications qui ne seront pas validées :
 aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
 ```
 
+``` bash
+vim developement/README.md 
+
+git add developement/README.md
+
+git commit -m "Update development doc"
+[1-prepare-package-from-claudes-code 8491126] Update development doc
+ 1 file changed, 74 insertions(+)
+
+GIT_SSH_COMMAND='ssh -i ~/.ssh/ebraux_rsa -o IdentitiesOnly=yes' git push
+Énumération des objets: 7, fait.
+Décompte des objets: 100% (7/7), fait.
+Compression par delta en utilisant jusqu'à 8 fils d'exécution
+Compression des objets: 100% (4/4), fait.
+Écriture des objets: 100% (4/4), 1.53 Kio | 1.53 Mio/s, fait.
+Total 4 (delta 1), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ebraux/sshunet.git
+   13f076f..8491126  1-prepare-package-from-claudes-code -> 1-prepare-package-from-claudes-code
+
+git status
+Sur la branche 1-prepare-package-from-claudes-code
+Votre branche est à jour avec 'origin/1-prepare-package-from-claudes-code'.
+
+rien à valider, la copie de travail est propre
+```
 
 
